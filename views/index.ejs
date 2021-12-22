@@ -1,0 +1,53 @@
+
+<!-- include header -->
+    <%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">Add User <i class="fas fa-user-plus"></i></span>
+                </a>
+                <a href="/analysis-graph" class="graph">
+                    <span class="text-gradient">Graph <i class="fas fa-chart-line"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Sl.no</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>ChestPainType</th>
+                            <th>RestingBP</th>
+                            <th>Cholesterol</th>
+                            <th>FastingBS</th>
+                            <th>RestingECG</th>
+                            <th>MaxHR</th>
+                            <th>ExerciseAngina</th>
+                            <th>Oldpeak</th>
+                            <th>ST_Slope</th>
+                            <th>HeartDisease</th>
+                            <!-- <th>Status</th> -->
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
