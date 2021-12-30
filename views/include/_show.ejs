@@ -1,18 +1,16 @@
 <% for(var i = 0; i < users.length; i++) { %>
 <tr>
     <td ><%= i+1 %></td>
-    <td><%= users[i].Age %></td>
-    <td><%= users[i].Sex %></td>
-    <td><%= users[i].ChestPainType %></td>
-    <td><%= users[i].RestingBP %></td>
-    <td><%= users[i].Cholesterol %></td>
-    <td><%= users[i].FastingBS %></td>
-    <td><%= users[i].RestingECG %></td>
-    <td><%= users[i].MaxHR %></td>
-    <td><%= users[i].ExerciseAngina %></td>
-    <td><%= users[i].Oldpeak %></td>
-    <td><%= users[i].ST_Slope %></td>
-    <td><%= users[i].HeartDisease %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].mfr %></td>
+    <td><%= users[i].type %></td>
+    <td><%= users[i].calories %></td>
+    <td><%= users[i].protein %></td>
+    <td><%= users[i].fat %></td>
+    <td><%= users[i].sodium %></td>
+    <td><%= users[i].fiber %></td>
+    <td><%= users[i].carbo %></td>
+    <td><%= users[i].sugars %></td>
     <!-- <td><%= users[i].status %></td> -->
     <td>
         <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">

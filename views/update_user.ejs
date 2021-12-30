@@ -20,97 +20,72 @@
          <!-- form handling -->
  <form method="POST" id="update_user">
     <div class="new_user">
-        <div class="form-group">
-            <label for="Sex" class="text-dark">Sex</label>
-            <div class="radio inline">
-                <input type="radio" id="radio-2" name="Sex" value="M" <%= user.Sex == 'M' ? 'checked' : '' %>>
-                <label for="radio-2" class="radio-label">M</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-3" name="Sex" value="F"  <%= user.Sex == 'F' ? 'checked' : '' %> >
-                <label for="radio-3" class="radio-label">F</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="ChestPainType" class="text-dark">ChestPainType</label>
-            <div class="radio inline">
-                <input type="radio" id="radio-5" name="ChestPainType" value="ATA" <%= user.ChestPainType == 'ATA' ? 'checked' : '' %>>
-                <label for="radio-5" class="radio-label">ATA</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-6" name="ChestPainType" value="NAP"  <%= user.ChestPainType == 'NAP' ? 'checked' : '' %> >
-                <label for="radio-6" class="radio-label">NAP</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-7" name="ChestPainType" value="AYS"  <%= user.ChestPainType == 'AYS' ? 'checked' : '' %> >
-                <label for="radio-7" class="radio-label">AYS</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-8" name="ChestPainType" value="TA"  <%= user.ChestPainType == 'TA' ? 'checked' : '' %> >
-                <label for="radio-7" class="radio-label">TA</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="name" class="text-dark">Age</label>
-            <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="Age" value="<%= user.Age %>" placeholder="21">
-        </div>
-        <!-- <div class="form-group">
-            <label for="Email" class="text-dark">Email</label>
-            <input type="text" name="email" value="<%= user.email%>" placeholder="example@gmail.com">
-        </div> -->
-
-        <!-- <div class="form-group">
-            <label for="age" class="text-dark">Age</label>
-            <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="age" value="0" placeholder="0">
-        </div> -->
 
         <div class="form-group">
-            <label for="RestingBP" class="text-dark">RestingBP</label>
+            <label for="name" class="text-dark">Name</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="RestingBP" value="<%= user.RestingBP %>" placeholder="<%= user.RestingBP %>">
+            <input type="text" name="name" value="<%= user.name %>">
         </div>
         <div class="form-group">
-            <label for="Cholesterol" class="text-dark">Cholesterol</label>
+            <label for="name" class="text-dark">MFR</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="Cholesterol" value="<%= user.Cholesterol %>" placeholder="<%= user.Cholesterol %>">
+            <input type="text" name="mfr" value="<%= user.mfr %>">
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="text-dark">Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="type" value="C" <%= user.type == 'C' ? 'checked' : '' %>>
+                <label for="radio-2" class="radio-label">C</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="type" value="H"  <%= user.type == 'H' ? 'checked' : '' %> >
+                <label for="radio-3" class="radio-label">H</label>
+            </div>
+        </div>
+
+        <!-- <div class="form-group">
+            <label for="name" class="text-dark">Type</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="type" value="<%= user.type %>">
+        </div> -->
+        <div class="form-group">
+            <label for="name" class="text-dark">Calories</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="calories" value="<%= user.calories %>">
         </div>
         <div class="form-group">
-            <label for="FastingBS" class="text-dark">FastingBS</label>
+            <label for="name" class="text-dark">Protein</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="FastingBS" value="<%= user.FastingBS %>" placeholder="<%= user.FastingBS %>">
+            <input type="text" name="protein" value="<%= user.protein %>">
         </div>
         <div class="form-group">
-            <label for="RestingECG" class="text-dark">RestingECG</label>
+            <label for="name" class="text-dark">Fat</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="RestingECG" value="<%= user.RestingECG %>" placeholder="<%= user.RestingECG %>">
+            <input type="text" name="fat" value="<%= user.fat %>">
         </div>
         <div class="form-group">
-            <label for="MaxHR" class="text-dark">MaxHR</label>
+            <label for="name" class="text-dark">Sodium</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="MaxHR" value="<%= user.MaxHR %>" placeholder="<%= user.MaxHR %>">
+            <input type="text" name="sodium" value="<%= user.sodium %>">
         </div>
         <div class="form-group">
-            <label for="ExerciseAngina" class="text-dark">ExerciseAngina</label>
+            <label for="name" class="text-dark">Fiber</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="ExerciseAngina" value="<%= user.ExerciseAngina %>" placeholder="<%= user.ExerciseAngina %>">
+            <input type="text" name="fiber" value="<%= user.fiber %>">
         </div>
         <div class="form-group">
-            <label for="Oldpeak" class="text-dark">Oldpeak</label>
+            <label for="name" class="text-dark">Carbo</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="Oldpeak" value="<%= user.Oldpeak %>" placeholder="<%= user.Oldpeak %>">
+            <input type="text" name="carbo" value="<%= user.carbo %>">
         </div>
         <div class="form-group">
-            <label for="ST_Slope" class="text-dark">ST_Slope</label>
+            <label for="name" class="text-dark">Sugars</label>
             <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="ST_Slope" value="<%= user.ST_Slope %>" placeholder="<%= user.ST_Slope %>">
+            <input type="text" name="sugars" value="<%= user.sugars %>">
         </div>
-        <div class="form-group">
-            <label for="HeartDisease" class="text-dark">HeartDisease</label>
-            <input type="hidden" name="id" value="<%= user._id %>">
-            <input type="text" name="HeartDisease" value="<%= user.HeartDisease %>" placeholder="<%= user.HeartDisease %>">
-        </div>
+
+
         <div class="form-group">
             <button type="submit" class="btn text-dark update">SAVE</button>
         </div>

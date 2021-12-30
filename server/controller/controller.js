@@ -15,18 +15,16 @@ exports.create = (req, res) => {
   var objectId = new ObjectID();
   const user = new Userdb({
     _id: objectId,
-    Age: req.body.Age,
-    Sex: req.body.Sex,
-    ChestPainType: req.body.ChestPainType,
-    RestingBP: req.body.RestingBP,
-    Cholesterol: req.body.Cholesterol,
-    FastingBS: req.body.FastingBS,
-    RestingECG: req.body.RestingECG,
-    MaxHR: req.body.MaxHR,
-    ExerciseAngina: req.body.ExerciseAngina,
-    Oldpeak: req.body.Oldpeak,
-    ST_Slope: req.body.ST_Slope,
-    HeartDisease: req.body.HeartDisease,
+    name: req.body.name,
+    mfr: req.body.mfr,
+    type: req.body.type,
+    calories: req.body.calories,
+    protein: req.body.protein,
+    fat: req.body.fat,
+    sodium: req.body.sodium,
+    fiber: req.body.fiber,
+    carbo: req.body.carbo,
+    sugars: req.body.sugars
   });
   // console.log(user);
   // save user in the database

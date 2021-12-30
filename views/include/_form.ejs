@@ -1,86 +1,65 @@
  <!-- form handling -->
  <form action="/api/users" method="POST" id="add_user">
     <div class="new_user">
+
         <div class="form-group">
-            <label for="gender" class="text-dark">Sex</label>
-            <div class="radio inline">
-                <input type="radio" id="radio-2" name="Sex" value="M" >
-                <label for="radio-2" class="radio-label">M</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-3" name="Sex" value="F" >
-                <label for="radio-3" class="radio-label">F</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="name" class="text-dark">ChestPainType</label>
-            <div class="radio inline">
-                <input type="radio" id="radio-4" name="ChestPainType" value="ATA" >
-                <label for="radio-4" class="radio-label">ATA</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-5" name="ChestPainType" value="NAP" >
-                <label for="radio-5" class="radio-label">NAP</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-6" name="ChestPainType" value="AYS" >
-                <label for="radio-6" class="radio-label">AYS</label>
-            </div>
-            <div class="radio inline">
-                <input type="radio" id="radio-7" name="ChestPainType" value="TA" >
-                <label for="radio-7" class="radio-label">TA</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="name" class="text-dark">Age</label>
-            <input type="hidden" name="id" value="Age">
-            <input type="text" name="Age" value="21" placeholder="21">
+            <label for="name" class="text-dark">Name</label>
+            <input type="hidden" name="id" value="name">
+            <input type="text" name="name" value="Cereal Name" autocomplete="off" placeholder="Cereal Name">
         </div>
         
         <div class="form-group">
-            <label for="name" class="text-dark">RestingBP</label>
+            <label for="name" class="text-dark">Manufacturer</label>
             <!-- <input type="hidden" name="RestingBP" value="RestingBP"> -->
-            <input type="text" name="RestingBP" value="130" placeholder="130">
+            <input type="text" name="mfr" value="K" placeholder="K">
         </div>
+
         <div class="form-group">
-            <label for="name" class="text-dark">Cholesterol</label>
-            <!-- <input type="hidden" name="Cholesterol" value="Cholesterol"> -->
-            <input type="text" name="Cholesterol" value="180" placeholder="180">
+            <label for="type" class="text-dark">Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="type" value="C" >
+                <label for="radio-2" class="radio-label">C</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="type" value="H" >
+                <label for="radio-3" class="radio-label">H</label>
+            </div>
         </div>
+
         <div class="form-group">
-            <label for="name" class="text-dark">FastingBS</label>
+            <label for="name" class="text-dark">Calories</label>
             <!-- <input type="hidden" name="FastingBS" value="FastingBS"> -->
-            <input type="text" name="FastingBS" value="0" placeholder="0">
+            <input type="text" name="calories" value="120" placeholder="120">
         </div>
         <div class="form-group">
-            <label for="name" class="text-dark">RestingECG</label>
+            <label for="name" class="text-dark">Proteins</label>
             <!-- <input type="hidden" name="RestingECG" value="RestingECG"> -->
-            <input type="text" name="RestingECG" value="Normal" placeholder="Normal">
+            <input type="text" name="protein" value="4" placeholder="4">
         </div>
         <div class="form-group">
-            <label for="name" class="text-dark">MaxHR</label>
+            <label for="name" class="text-dark">Fat</label>
             <!-- <input type="hidden" name="MaxHR" value="MaxHR"> -->
-            <input type="text" name="MaxHR" value="110" placeholder="110">
+            <input type="text" name="fat" value="2" placeholder="2">
         </div>
         <div class="form-group">
-            <label for="name" class="text-dark">ExerciseAngina</label>
+            <label for="name" class="text-dark">Sodium</label>
             <!-- <input type="hidden" name="ExerciseAngina" value="ExerciseAngina"> -->
-            <input type="text" name="ExerciseAngina" value="T" placeholder="T">
+            <input type="text" name="sodium" value="200" placeholder="200">
         </div>
         <div class="form-group">
-            <label for="name" class="text-dark">Oldpeak</label>
+            <label for="name" class="text-dark">Fiber</label>
             <!-- <input type="hidden" name="Oldpeak" value="Oldpeak"> -->
-            <input type="text" name="Oldpeak" value="1" placeholder="1">
+            <input type="text" name="fiber" value="1" placeholder="1">
         </div>
         <div class="form-group">
-            <label for="name" class="text-dark">ST_Slope</label>
+            <label for="name" class="text-dark">Carbo</label>
             <!-- <input type="hidden" name="ST_Slope" value="ST_Slope"> -->
-            <input type="text" name="ST_Slope" value="Up" placeholder="Up">
+            <input type="text" name="carbo" value="11" placeholder="11">
         </div>
         <div class="form-group">
-            <label for="name" class="text-dark">HeartDisease</label>
+            <label for="name" class="text-dark">Sugars</label>
             <!-- <input type="hidden" name="HeartDisease" value="HeartDisease"> -->
-            <input type="text" name="HeartDisease" value="1" placeholder="1">
+            <input type="text" name="sugars" value="5" placeholder="5">
         </div>
         <div class="form-group">
             <button type="submit" class="btn text-dark update">SAVE</button>
