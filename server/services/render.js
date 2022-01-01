@@ -32,4 +32,6 @@ exports.update_user = (req, res) => {
 
 exports.analysis_graph = (req, res) => {
   res.render("analysis");
+  // axios
+  // .get("http://localhost:5500")
 }
